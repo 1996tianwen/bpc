@@ -14,11 +14,12 @@ import org.slf4j.LoggerFactory;
  *
  */
 public class ChainService {
-    private Logger logger = LoggerFactory.getLogger(this.getClass());
+    private static final Logger logger = LoggerFactory.getLogger(ChainService.class);
     private Catalog catalog;
     private Command command;
 
-    public void loadCatalogFile(String cfgFile) throws Exception {
+    public static void loadCatalogFile(String cfgFile) throws Exception {
+        logger.info("cfgFile : { }" + cfgFile);
         ConfigParser parser = new ConfigParser();
         parser.parse(ChainService.class.getClassLoader().getResource(cfgFile));
     }

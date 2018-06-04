@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<catalog name="sb">
+    <chain name="CommandChain">
+        <command id="commond1" className="Chain.Command1"></command>
+        <command id="commond2" className="Chain.Command2"></command>
+        <command id="commond3" className="Chain.Command3"></command>
+    </chain>
+
+    <chain name="ChainCommand">
+        <command id="commond3" className="Chain.Command3"></command>
+        <command id="commond2" className="Chain.Command2"></command>
+        <command id="commond1" className="Chain.Command1"></command>
+    </chain>
+</catalog>
+
